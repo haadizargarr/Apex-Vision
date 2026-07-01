@@ -1,8 +1,8 @@
-# Apex Vision
+# AI Form Coach
 
 ## 📝 Project Overview
 
-Apex Vision is an AI-powered fitness coaching application that provides real-time exercise tracking and posture analysis using computer vision. The application analyzes body movements through a webcam, counts repetitions, evaluates exercise form, and provides instant feedback to help users perform workouts correctly.
+AI Form Coach is an AI-powered fitness coaching application that provides real-time exercise tracking and posture analysis using computer vision. The application analyzes body movements through a webcam, counts repetitions, evaluates exercise form, and provides instant feedback to help users perform workouts correctly.
 
 This project was developed as a third-year Computer Science portfolio project at Taylor's University to strengthen my skills in full-stack web development, artificial intelligence, computer vision, and real-time communication.
 
@@ -115,13 +115,15 @@ http://localhost:8000
 
 ## 📸 Screenshots
 
-*(Placeholder for screenshots of:)*
-- Login page
-- Dashboard
-- Real-time posture detection
-- Exercise tracking
-- Analytics dashboard
-- Workout summary
+### AI Fitness Coach Dashboard
+
+![Dashboard Main](screenshots/dashboard-main.png)
+
+---
+
+### Dashboard Analytics and Feedback Details
+
+![Dashboard Details](screenshots/dashboard-details.png)
 
 ---
 
