@@ -2,36 +2,89 @@
 
 ## 📝 Project Overview
 
-**What is the project?**
-Apex Vision is an intelligent, real-time AI fitness coach. The application leverages a low-latency bi-directional WebSocket architecture to stream telemetry between a Vite/React frontend and a high-performance Python FastAPI backend. It utilizes OpenCV and MediaPipe for continuous, real-time computer vision and biomechanical posture analysis, persisting session telemetry via an embedded SQLite database.
+Apex Vision is an AI-powered fitness coaching application that provides real-time exercise tracking and posture analysis using computer vision. The application analyzes body movements through a webcam, counts repetitions, evaluates exercise form, and provides instant feedback to help users perform workouts correctly.
 
-**Why did you build it?**
-This project serves as a 3rd-year Computer Science portfolio prototype at Taylor's University. It was engineered specifically to master advanced algorithmic design, real-time data streaming pipelines, and intelligent system implementation in full-stack environments.
+This project was developed as a third-year Computer Science portfolio project at Taylor's University to strengthen my skills in full-stack web development, artificial intelligence, computer vision, and real-time communication.
 
-**Current Status:**
-Functional Prototype
+**Project Status:** Functional Prototype
 
-## 🛠️ Tech Stack & Technologies Used
+---
 
-- **Frontend Core:** React (v19), Vite
-- **Frontend UI & Data Visualization:** Tailwind CSS, Recharts, Lucide React
-- **Backend Framework & Server:** Python 3, FastAPI, Uvicorn
-- **AI & Computer Vision:** OpenCV-Python, MediaPipe
-- **Real-Time Communication:** WebSockets
-- **Database Persistence:** SQLite
+## 🚀 Features
 
-## ✨ Core Features
+- Real-time exercise tracking using computer vision
+- AI-powered posture and form analysis
+- Automatic repetition counting
+- Live feedback during workouts
+- Supports exercises such as:
+  - Bicep Curls
+  - Squats
+  - Shoulder Press
+- Performance dashboard with workout statistics
+- Text-to-Speech voice feedback
+- Real-time communication using WebSockets
+- Session data stored locally using SQLite
 
-- **Real-Time Biomechanical Tracking:** Employs MediaPipe pose estimation mapped through custom algebraic angle calculations to autonomously track joint mechanics for Bicep Curls, Squats, and Shoulder Presses.
-- **Asynchronous Telemetry Engine:** Utilizes Python's `asyncio` to handle concurrent WebSocket event streams while independently maintaining a continuous computer vision processing loop.
-- **Audio Feedback Subsystem:** Integrates non-blocking, native Text-to-Speech (TTS) capabilities to provide immediate, actionable feedback on poor exercise form.
-- **Dynamic Data Visualization Dashboard:** A responsive React UI leveraging Recharts to map real-time performance vectors such as movement velocity, form accuracy, repetitions, and Time Under Tension (TUT).
+---
 
-## 💻 How to Run the Project
+## 🛠️ Tech Stack
 
-Follow these steps to build and run the application locally:
+### Frontend
+- React 19
+- Vite
+- Tailwind CSS
+- Recharts
+- Lucide React
 
-**1. Initialize and Start the Backend**
+### Backend
+- Python
+- FastAPI
+- Uvicorn
+
+### AI & Computer Vision
+- OpenCV
+- MediaPipe
+
+### Database
+- SQLite
+
+### Communication
+- WebSockets
+
+---
+
+## 📂 Project Structure
+
+```text
+Apex-Vision/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── sessions.db
+│   └── ...
+│
+└── README.md
+```
+
+---
+
+## 💻 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/haadizargarr/Apex-Vision.git
+cd Apex-Vision
+```
+
+### 2. Start the backend
+
 ```bash
 cd backend
 python3 -m venv venv
@@ -40,14 +93,66 @@ pip install -r requirements.txt
 python app.py
 ```
 
-**2. Initialize and Start the Frontend**
+### 3. Start the frontend
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-The client dashboard will be available at `http://localhost:5173` while the backend runs on `http://localhost:8000`.
 
-## 📸 Visuals & Interface
+The frontend will run on:
+```text
+http://localhost:5173
+```
 
-*[Placeholder: Insert high-resolution screenshots of the React telemetry dashboard and real-time posture tracking views here]*
+The backend will run on:
+```text
+http://localhost:8000
+```
+
+---
+
+## 📸 Screenshots
+
+*(Placeholder for screenshots of:)*
+- Login page
+- Dashboard
+- Real-time posture detection
+- Exercise tracking
+- Analytics dashboard
+- Workout summary
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I gained experience with:
+
+- Building full-stack web applications
+- Developing REST APIs using FastAPI
+- Real-time communication using WebSockets
+- Computer vision with OpenCV and MediaPipe
+- AI-assisted posture detection
+- React component development
+- Data visualization using Recharts
+- Managing application state and backend integration
+
+---
+
+## 🔮 Future Improvements
+
+- User authentication
+- Workout history and progress tracking
+- Additional exercise support
+- Personalized AI workout recommendations
+- Cloud database integration
+- Mobile application version
+
+---
+
+## 👨‍💻 Author
+
+**Haadi Zargar**  
+Third-Year Computer Science Student  
+Taylor's University
